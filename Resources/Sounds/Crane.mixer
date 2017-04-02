@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Crane
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300001}
+  m_Snapshots:
+  - {fileID: 24500003}
+  m_StartSnapshot: {fileID: 24500003}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 0d412bffd7922447c80a526b67e0ed0c
+    - 52cc3dc6f067a42a1bb8a8da40ef25dc
+    - 3b069ad7a159d41e9a1cb652eea5589f
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500003}
+--- !u!243 &24300001
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 0d412bffd7922447c80a526b67e0ed0c
+  m_Children:
+  - {fileID: 243910519873812974}
+  - {fileID: 243081239452999996}
+  m_Volume: d45b8eba0f0bf47fe94014da2853ef6d
+  m_Pitch: 6b823e3af62b443ddb1775331dafc5c5
+  m_Effects:
+  - {fileID: 24400002}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400002
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2f33c70c41d2b4032981275c79041f23
+  m_EffectName: Attenuation
+  m_MixLevel: 06b1937f57f29407f945b1cf4501e2bf
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500003
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: b8ed6e62c1e72489fbbdac7c3b300bd0
+  m_FloatValues:
+    ac9d3952423f244c1b64e6f5923bc70a: 5.545087
+    d45b8eba0f0bf47fe94014da2853ef6d: 0.04171297
+    c75442bd346044fd49c77573c17bceb4: 3.2656894
+  m_TransitionOverrides: {}
+--- !u!243 &243081239452999996
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Wood
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3b069ad7a159d41e9a1cb652eea5589f
+  m_Children: []
+  m_Volume: ac9d3952423f244c1b64e6f5923bc70a
+  m_Pitch: 4ab0e43a1afc74dea9fce97894d1ecbc
+  m_Effects:
+  - {fileID: 244794946995591662}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243910519873812974
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Metal
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 52cc3dc6f067a42a1bb8a8da40ef25dc
+  m_Children: []
+  m_Volume: c75442bd346044fd49c77573c17bceb4
+  m_Pitch: a00751716309e4c08b97f9f34e01a119
+  m_Effects:
+  - {fileID: 244567955987151880}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244567955987151880
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: ec5c176203eab4c3db8cff3b73acd036
+  m_EffectName: Attenuation
+  m_MixLevel: 7b68bb96ca0004e1abc9c24b7672e38a
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244794946995591662
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5a267769e354f41dda386374a1b21854
+  m_EffectName: Attenuation
+  m_MixLevel: 5c04c83c211e442939df206cfb9cf357
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
