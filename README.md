@@ -1,4 +1,4 @@
-# Unity-C-Scripts-For-Audio
+# Unity Audio Implementation
 If you are an indie game developer, you must want to save the budget as much as possible. One big challenge is how to dealing with the audio within the game without using Wwise since when you publish the game, Wwise will also take a lot of money from you.
 Here are some common scripts of the audio system for a 3D first person game, including a sound manager, movement (including footsteps and jump), script for birds or seagull, seawaves and so on.
 
